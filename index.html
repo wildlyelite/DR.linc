@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr.linc</title>
+    <!-- google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/4373aa658b.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+
+            font-family: "Montserrat";
+            text-align: center;
+        }
+
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Montserrat-bold";
+        }
+
+
+        p {
+            color: #8f8f8f;
+            font-size: medium;
+        }
+
+        .big-heading {
+            font-family: "Montserrat-Black";
+            font-size: 4rem;
+            font-weight: 900;
+            line-height: 1.5;
+        }
+
+        .section-heading {
+            font-size: 3rem;
+            line-height: 1.5;
+        }
+
+        /* containesrs */
+        .container-fluid {
+            padding: 7% 15%;
+        }
+
+        .colored-section {
+            background-color: rgb(255, 255, 255);
+            color: rgb(66, 64, 64);
+        }
+
+        .white-section {
+            background-color: rgb(250, 156, 156);
+        }
+
+        .white-section h1 {
+            text-align: center;
+            padding-top: 2vw;
+            font-size: 8vw;
+            font-family: Arial, Helvetica, sans-serif;
+            color: beige;
+        }
+
+        /* navigation bar  */
+        .logo {
+            width: 50px;
+
+        }
+
+        .navbar {
+            padding: 0 0 4.5rem;
+            z-index: 1;
+        }
+
+        .navbar-brand {
+            font-family: "Ubuntu";
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .nav-item {
+            padding: 0 18px;
+        }
+
+        .nav-link {
+            font-size: 1.2rem;
+            font-family: "Montserrat";
+
+        }
+
+        .download-button {
+            margin: 5% 3% 5% 0;
+        }
+
+
+        #title .container-fluid {
+            padding: 3% 15% 7%;
+            text-align: center;
+        }
+
+        /* title img  */
+
+        .phone-mockup {
+            position: absolute;
+            top: -12vw;
+            right: 0vw;
+        }
+
+        #features {
+            position: relative;
+            z-index: 1;
+        }
+
+        .Feature {
+            margin-right: 10vw;
+            margin-bottom: 5vw;
+        }
+
+
+        .carousel {
+            background-color: thistle;
+        }
+
+        .card {
+
+            margin-bottom: 5vw;
+        }
+
+        .card-body {
+            position: absolute;
+            top: 15vw;
+            background-color: #ffffff;
+            border: #8f8f8f solid 2px;
+            border-radius: 25%;
+        }
+
+        /* .card:hover{
+            background-color: #8f8f8f;
+            color: aliceblue;
+        }
+        .card:hover  .card-body{
+              visibility: visible;
+              opacity: 1;
+              
+            color: aliceblue;
+
+        } */
+        @media only screen and (max-width: 600px) {
+            .phone-mockup {
+                position: static;
+            }
+
+            .card-body {
+                position: absolute;
+                top: 35vw;
+            }
+
+            .card {
+
+                margin-bottom: 10vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="colored-section  .container-fluid" id="title">
+        <nav class="navbar navbar-expand-lg navbar-light  ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="logo.png" alt="" width="40" height="40" class="d-inline-block align-text-top logo">
+                    Dr.Linc</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="row">
+
+            <div class="col-lg-6 ">
+                <h1 class="big-heading"> Pocket Doctor- <br> online hassle free consultation</h1>
+                <button type="button" class="btn btn-dark btn-lg download-button"> <i class="fab fa-google-play"></i>
+                    Download</button>
+            </div>
+            <div class="col-lg-6 ">
+                <img src="3.png" class="img-fluid rounded  phone-mockup" alt="phone-mockup">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="white-section" id="features">
+        <h1>Features</h1>
+
+        <div class="doctars">
+            <!-- <div class="row container-fluid ">
+                <div class="col-lg-2 Feature">
+                    <i class="icon fas fa-user-md  fa-4x "></i>
+                    <h3 class="feature-title">Dental</h3>
+                    <p>Specialist in the care of the teeth and gums, and the treatment of oral disease and decay.</p>
+
+                </div>
+                <div class=" col-lg-2  Feature ">
+                    <i class="icon fas fa-user-md  fa-4x  "></i>
+                    <h3 class="feature-title">Ortho</h3>
+
+                </div>
+                <div class="col-lg-2 Feature">
+                    <i class=" icon fas fa-user-md  fa-4x  "></i>
+                    <h3 class="feature-title">General physian</h3>
+
+                </div>
+                <div class=" col-lg-2  Feature ">
+                    <i class="icon fas fa-user-md  fa-4x  "></i>
+                    <h3 class="feature-title">veterinary</h3>
+
+                </div>
+                <div class="col-lg-2 Feature">
+                    <i class=" icon fas fa-user-md  fa-4x  "></i>
+                    <h3 class="feature-title">Pediatrician</h3>
+
+                </div>
+                <div class=" col-lg-2  Feature ">
+                    <i class="icon fas fa-user-md  fa-4x  "></i>
+                    <h3 class="feature-title">veterinary</h3>
+
+                </div>
+            </div> -->
+            <div class="row container-fluid ">
+                <div class="col-lg-2 Feature">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX14503102.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Dental</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 Feature">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX14503102.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Ortho</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 Feature">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX14503102.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">General physian</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 Feature">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX14503102.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">veterinary</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 Feature">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX14503102.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pediatrician</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 Feature">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX14503102.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">veterinary</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row container-fluid ">
+                <div class="col-lg-2 Feature">
+                    <i class="icon fas fa-male  fa-4x "></i>
+                    <h3 class="feature-title">Health data</h3>
+
+                </div>
+                <div class=" col-lg-2  Feature ">
+                    <i class="icon fas fa-paste  fa-4x  "></i>
+                    <h3 class="feature-title">Prescription</h3>
+
+                </div>
+                <div class="col-lg-2 Feature">
+                    <i class=" icon fas fa-book  fa-4x  "></i>
+                    <h3 class="feature-title">Lab reports</h3>
+
+                </div>
+                <div class=" col-lg-2  Feature ">
+                    <i class="icon fas fa-cart-plus  fa-4x  "></i>
+                    <h3 class="feature-title">Cart</h3>
+
+                </div>
+                <div class="col-lg-2 Feature">
+                    <i class=" icon fas fa-notes-medical fa-4x  "></i>
+                    <h3 class="feature-title">Medical</h3>
+
+                </div>
+                <div class=" col-lg-2  Feature ">
+                    <i class="icon fas fa-user-md  fa-4x  "></i>
+                    <h3 class="feature-title">veterinary</h3>
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
