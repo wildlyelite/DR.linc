@@ -62,8 +62,12 @@
             color: rgb(66, 64, 64);
         }
 
+        .white-section h1 {
+            background-color: #8f8f8f;
+        }
+
         .white-section {
-            background-color: rgb(250, 156, 156);
+            background-color: rgb(247, 225, 225);
         }
 
         .white-section h1 {
@@ -134,44 +138,208 @@
             background-color: thistle;
         }
 
-        .card {
+        .doctars .card {
+            height: 200px;
 
             margin-bottom: 5vw;
         }
 
-        .card-body {
-            position: absolute;
+        .doctars .card-body {
+            /* position: absolute;
             top: 15vw;
             background-color: #ffffff;
             border: #8f8f8f solid 2px;
-            border-radius: 25%;
+            border-radius: 25%; */
+            visibility: hidden;
+            opacity: 0;
         }
 
         /* .card:hover{
             background-color: #8f8f8f;
             color: aliceblue;
         }
-        .card:hover  .card-body{
-              visibility: visible;
-              opacity: 1;
-              
-            color: aliceblue;
+        */
+        .doctars .card:hover {
+            height: 500px;
+            margin-bottom: 1vw;
+        }
 
+        .doctars .card:hover .card-body {
+            visibility: visible;
+            opacity: 1;
+            width: auto;
+
+        }
+
+        .offer .row .col {
+            margin: 3.5vw;
+            border: solid 2px black;
+            border-radius: 10%;
+            height: auto;
+        }
+
+        .offer img {
+            height: 8vw;
+            width: 8vw;
+            border-radius: 25% 25% 10% 10%;
+            /* position: absolute;
+                top: -10vw; */
+        }
+
+        .patients .card {
+            margin: 2vw;
+            display: inline-block;
+        }
+
+        /* .img-1 {
+            position: absolute;
+            left: 10vw;
+            
+        }
+
+        .img-2 {
+            
+            position: absolute;
+            left: 25vw;
+            
+        }
+
+        .img-3 {
+            position: absolute;
+            left: 40vw;
+            
+        }
+
+        .img-4 {
+            position: absolute;
+            left: 60vw;
+            
         } */
+
+        /* .img-5 {
+            position: absolute;
+            
+            
+            left: 10vw;
+            
+        }
+
+        .img-6 {
+            position: absolute;
+            
+            left: 20vw;
+            
+        }
+
+        .img-7 {
+            position: absolute;
+            left: 30vw;
+            
+            
+        }
+
+        .img-8 {
+            position: absolute;
+            left: 40vw;
+            
+            
+        } */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        }
+
+
+
+        .patients-1 img {
+            border-radius: 50%;
+            z-index: 1;
+            height: 10vw;
+            width: 10vw;
+            /* margin: auto; */
+            margin-top: 2vw;
+            margin-left: -5vw;
+            position: absolute;
+        }
+
+        .patients-1 .card {
+            width: 30vw;
+            margin-left: 15vw;
+            margin-top: 5vw;
+            padding-left: 5vw;
+        }
+
+        .patients-2 .card {
+            width: 3vw;
+            margin-left: 10vw;
+            margin-top: 5vw;
+            padding-top: 5vw;
+        }
+
+        .patients-2 img {
+            border-radius: 50%;
+            height: 10vw;
+            width: 10vw;
+            z-index: 1;
+             position: absolute; 
+             margin-left: 5vw;
+             margin-top: -5vw;
+             
+        }
+
+
+
+
         @media only screen and (max-width: 600px) {
             .phone-mockup {
                 position: static;
             }
 
-            .card-body {
-                position: absolute;
-                top: 45vw;
+            .big-heading {
+                font-size: 3.5rem;
+                font-weight: 400;
+                line-height: 1.5;
             }
 
-            .card {
-
-                margin-bottom: 15vw;
+            .doctars .card-body {
+                visibility: visible;
+                opacity: 1;
             }
+
+            .doctars .card {
+                height: auto;
+
+                margin-bottom: 5vw;
+            }
+
+            .offer img {
+                height: 8vw;
+                width: 8vw;
+                border-radius: 25% 25% 10% 10%;
+                /* position: absolute;
+                top: -10vw; */
+            }
+
+            .patients-2 .card {
+            width: 10rem;
+            margin-left: 13vw;
+            margin-top: 10vw;
+            margin-right: 10vw;
+            padding-left: 22vw;
+            /* padding-right: 10vw; */
+        }
+
+        .patients-2 img {
+            border-radius: 50%;
+            height: 35vw;
+            width: 35vw;
+            /* margin-right: 30vw; */
+            margin-left: -10vw;
+            margin-top: auto;
+            margin-bottom: auto;
+             
+        }
+
         }
     </style>
 </head>
@@ -224,7 +392,7 @@
 
 
     <section class="white-section" id="features">
-        <h1>Features</h1>
+        <h1>DOCTORS</h1>
 
         <div class="doctars">
             <!-- <div class="row container-fluid ">
@@ -362,35 +530,285 @@
 
                 </div>
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </section>
 
+    <!-- <section class="offer">
+        <h1>For patients:</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="https://images.cdn2.stockunlimited.net/preview1300/ambulance_2033260.jpg" alt=""
+                        srcset="">
+                    <h2>1. One touch ambulances </h2>
+                </div>
+                <div class="col">
+                    <img src="https://images.cdn2.stockunlimited.net/preview1300/ambulance_2033260.jpg" alt=""
+                        srcset="">
+                    <h2>1. One touch ambulances </h2>
+                </div>
+                <div class="col">
+                    <img src="https://images.cdn2.stockunlimited.net/preview1300/ambulance_2033260.jpg" alt=""
+                        srcset="">
+                    <h2>1. One touch ambulances </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="patients">
+
+        <h1>For patients:</h1>
+        <div class="card img-1 grid" style="width: 12rem;">
+            <img src="https://media.istockphoto.com/vectors/blood-test-tube-container-and-medical-lab-analysis-form-list-with-vector-id1167142751?k=6&m=1167142751&s=612x612&w=0&h=Kpl80zG2mfUv1_NHa-vOPhVGaiQm-HJgJcFlqMUu2IE="
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">LAB TEST.</p>
+            </div>
+        </div>
+        <div class="card img-2 grid" style="width: 12rem;">
+            <img src="https://st3.depositphotos.com/4320929/13360/v/1600/depositphotos_133600728-stock-illustration-doctor-with-lab-coat-holding.jpg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">LAB REPORTS.</p>
+            </div>
+        </div>
+        <div class="card img-3 grid" style="width: 12rem;">
+            <img src="https://media.gettyimages.com/vectors/electronic-medical-records-vector-id527567529"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Patients data .</p>
+            </div>
+        </div>
+        <div class="card img-4 grid" style="width: 12rem;">
+            <img src="https://static.vecteezy.com/system/resources/previews/000/118/287/original/prescription-pad-vector.jpg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Prescription .</p>
+            </div>
+        </div>
+        <div class="card img-5 grid" style="width: 12rem;">
+            <img src="https://i.pinimg.com/originals/d3/a9/2e/d3a92e42ac348438ceb50e483a5167f5.png" class="card-img-top"
+                alt="...">
+            <div class="card-body">
+                <p class="card-text">Emergency connect .</p>
+            </div>
+        </div>
+        <div class="card img-6 grid" style="width: 12rem;">
+            <img src="https://s3.amazonaws.com/ionic-marketplace/taxi-booking-app-development/screenshot_2.png"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Cabs booking direct from the app, from home to hospital .</p>
+            </div>
+        </div>
+        <div class="card img-7 grid" style="width: 12rem;">
+            <img src="https://media.istockphoto.com/vectors/isometric-flat-vector-concept-of-online-pharmacy-store-medicine-app-vector-id1225571097?k=6&m=1225571097&s=170667a&w=0&h=6z_cYSaCkUEFn034ZmTXDlDKOfT4e0Dn9Xzwrp9VWOw="
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Online pharmacy.</p>
+            </div>
+        </div>
+        <div class="card img-8 grid" style="width: 12rem;">
+            <img src="https://static.vecteezy.com/system/resources/previews/000/218/553/non_2x/online-mobile-payment-vector.jpg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Online payments .</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="patients-1">
+
+        <h1>For patients:</h1>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="card grid " style="width: 10rem;">
+                <img src="https://media.istockphoto.com/vectors/blood-test-tube-container-and-medical-lab-analysis-form-list-with-vector-id1167142751?k=6&m=1167142751&s=612x612&w=0&h=Kpl80zG2mfUv1_NHa-vOPhVGaiQm-HJgJcFlqMUu2IE="
+                    class="card-img-top" alt="...">
+
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+            <div class="card grid " style="width: 10rem;">
+                <img src="https://st3.depositphotos.com/4320929/13360/v/1600/depositphotos_133600728-stock-illustration-doctor-with-lab-coat-holding.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+            <div class="card grid " style="width: 10rem;">
+                <img src="https://media.gettyimages.com/vectors/electronic-medical-records-vector-id527567529"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+            <div class="card grid " style="width: 10rem;">
+                <img src="https://static.vecteezy.com/system/resources/previews/000/118/287/original/prescription-pad-vector.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
 
 
+            <div class="card grid" style="width: 10rem;">
+                <img src="https://media.istockphoto.com/vectors/blood-test-tube-container-and-medical-lab-analysis-form-list-with-vector-id1167142751?k=6&m=1167142751&s=612x612&w=0&h=Kpl80zG2mfUv1_NHa-vOPhVGaiQm-HJgJcFlqMUu2IE="
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+            <div class="card grid" style="width: 10rem;">
+                <img src="https://st3.depositphotos.com/4320929/13360/v/1600/depositphotos_133600728-stock-illustration-doctor-with-lab-coat-holding.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+            <div class="card grid" style="width: 10rem;">
+                <img src="https://media.gettyimages.com/vectors/electronic-medical-records-vector-id527567529"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+            <div class="card grid" style="width: 10rem;">
+                <img src="https://static.vecteezy.com/system/resources/previews/000/118/287/original/prescription-pad-vector.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+        </div>
 
+    </section> -->
 
+    <section class="patients-2">
 
+        <h1>For patients:</h1>
+        <div class="row row-cols-1 row-cols-md-5  g-4">
+            <div class="card img-1 grid" style="width: 102rem;">
+                <img src="https://media.istockphoto.com/vectors/blood-test-tube-container-and-medical-lab-analysis-form-list-with-vector-id1167142751?k=6&m=1167142751&s=612x612&w=0&h=Kpl80zG2mfUv1_NHa-vOPhVGaiQm-HJgJcFlqMUu2IE="
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
 
+                </div>
+            </div>
+            <div class="card img-2 grid" style="width: 12rem;">
+                <img src="https://st3.depositphotos.com/4320929/13360/v/1600/depositphotos_133600728-stock-illustration-doctor-with-lab-coat-holding.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
 
+                </div>
+            </div>
+            <div class="card img-3 grid" style="width: 12rem;">
+                <img src="https://media.gettyimages.com/vectors/electronic-medical-records-vector-id527567529"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
 
+                </div>
+            </div>
+            <div class="card img-4 grid" style="width: 12rem;">
+                <img src="https://static.vecteezy.com/system/resources/previews/000/118/287/original/prescription-pad-vector.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
 
+                </div>
+            </div>
+            <div class="card img-5 grid" style="width: 12rem;">
+                <img src="https://i.pinimg.com/originals/d3/a9/2e/d3a92e42ac348438ceb50e483a5167f5.png"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+
+                </div>
+            </div>
+            <div class="card img-6 grid" style="width: 12rem;">
+                <img src="https://s3.amazonaws.com/ionic-marketplace/taxi-booking-app-development/screenshot_2.png"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+
+                </div>
+            </div>
+            <div class="card img-7 grid" style="width: 12rem;">
+                <img src="https://media.istockphoto.com/vectors/isometric-flat-vector-concept-of-online-pharmacy-store-medicine-app-vector-id1225571097?k=6&m=1225571097&s=170667a&w=0&h=6z_cYSaCkUEFn034ZmTXDlDKOfT4e0Dn9Xzwrp9VWOw="
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+
+                </div>
+            </div>
+            <div class="card img-8 grid" style="width: 12rem;">
+                <img src="https://static.vecteezy.com/system/resources/previews/000/218/553/non_2x/online-mobile-payment-vector.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
